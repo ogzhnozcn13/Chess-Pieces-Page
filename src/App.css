@@ -9,7 +9,7 @@
 }
 
 body {
-	background: linear-gradient(-45deg, #000000, #5e5e5e,#000000, #c7c7c7, #000000);
+	background: linear-gradient(-45deg, #ffffff, #3e3e3e,#6e6e6e, #808080, #000000);
 	background-size: 400% 400%;
 	animation: gradient 20s ease infinite;
 	height: 100vh;
@@ -36,18 +36,21 @@ body {
 .card{
     width: 50rem;
     height: auto;
-    background-color: rgba(252, 251, 251, 0);
+    background-color: rgba(255, 255, 255, 0);
     padding: 2rem;
     margin: 1rem;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) ;
     color: aliceblue;
 }
+
 h5{
     font-size: 2rem;
+    font-weight: 900;
     font-family: 'Cinzel', serif;
-    color: rgb(206, 5, 5);
-    text-shadow: 1px 1px 2px white;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
 }
+
 .ques{
     display: flex;
     flex-direction: row;
@@ -55,6 +58,7 @@ h5{
     align-items: center;
     
 }
+
 .ques-answer{
     display: flex;
     flex-direction: row;
@@ -64,12 +68,13 @@ h5{
 
 button{
     border-radius: 50%;
-    background: rgba(252, 251, 251, 0.5);
+    background: rgba(252, 251, 251, 0);
     height: 2rem;
     width: 2rem;
     border: none;
     outline: none;
     cursor: pointer;
+    
     font-size: 2rem;
 }
 p{  
@@ -81,4 +86,8 @@ p{
     text-indent: 1.25rem;
     padding-left: 1.3rem;
     padding-right: 1.3rem;
+}
+
+span{
+  text-shadow: 2px 2px 6px rgb(255, 255, 255);
 }
