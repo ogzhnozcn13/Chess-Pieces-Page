@@ -1,5 +1,6 @@
 import './App.css';
 import ChessPieces from './components/ChessPieces';
+import data from "./helpers/data"
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
     </div>
     <div className="app">
       <div className="main">
-        <ChessPieces/>
+        <ChessPieces data={data}/>
       </div>
     </div>
     </>

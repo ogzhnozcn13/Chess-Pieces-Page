@@ -1,9 +1,20 @@
+import Pieces from "./Pieces";
 
 
-const ChessPieces = () => {
-  return (
-    <div>ChessPieces</div>
-  )
+const ChessPieces = (props) => {
+
+    const {data} = props
+    console.log(data);
+
+    return (
+        <div className="row">
+            {data.map((item) => {
+                return(
+                    <Pieces key={item.id} {...item}/>
+                )
+            })}
+        </div>
+    )
 }
 
 export default ChessPieces
